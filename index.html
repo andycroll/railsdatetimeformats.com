@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="container">
+
+<div class="language-ruby highlighter-rouge">
+  <div class="highlight text-center h4 mt-3 mb-4">
+    <pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">to_s</span><span class="p">(</span><span class="ss">:symbol</span><span class="p">)</span></code></pre>
+  </div>
+</div>
+
+<div class="row">
+
+<div class="col-5 text-right">
+
+<p><b>date</b></p>
+<hr />
+
+<p><a class="" data-name="db" data-js-format="%Y-%m-%d">2007-11-10</a></p>
+<p><a class="" data-name="number" data-js-format="%Y%m%d">20071110</a></p>
+<p>&nbsp;</p>
+<p><a class="" data-name="short" data-js-format="%d %b">10 Nov</a></p>
+<p><a class="" data-name="long" data-js-format="%B %d, %Y">November 10, 2007</a></p>
+<p><a class="" data-name="long_ordinal" data-js-format="%B %o, %Y">November 10th, 2007</a></p>
+<p><a class="" data-name="rfc822" data-js-format="%d %b %Y">10 Nov 2007</a></p>
+<p><a class="" data-name="iso8601" data-js-format="%Y-%m-%d">2007-11-10</a></p>
+
+<p><a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/time/conversions.rb">code</a></p>
+
+</div>
+
+<div class="col-2 text-center">
+
+<p><b>:symbol</b></p>
+<hr />
+
+<p><b>:db</b></p>
+<p><b>:number</b></p>
+<p><b>:time</b></p>
+<p><b>:short</b></p>
+<p><b>:long</b></p>
+<p><b>:long_ordinal</b></p>
+<p><b>:rfc822</b></p>
+<p><b>:iso8601</b></p>
+
+</div>
+
+<div class="col-5">
+
+<p><b>time</b></p>
+<hr />
+
+<p><a class="" data-name="db" data-js-format="%Y-%m-%d %H:%M:%S">2007-01-18 12:34:56</a></p>
+<p><a class="" data-name="number" data-js-format="%Y%m%d%H%M%S">20070118123456</a></p>
+<p><a class="" data-name="time" data-js-format="%H:%M">12:34</a></p>
+<p><a class="" data-name="short" data-js-format="%d %b %H:%M">18 Jan</a></p>
+<p><a class="" data-name="long" data-js-format="%B %d, %Y %H:%M">January 18, 2007 06:10</a></p>
+<p><a class="" data-name="long_ordinal" data-js-format="%B %o, %Y %H:%M">January 18th, 2007 06:10</a></p>
+<p><a class="" data-name="rfc822" data-js-format="%a, %d %b %Y %H:%M:%S %z">Thu, 18 Jan 2007 06:10:17 -0600</a></p>
+<p><a class="" data-name="iso8601" data-js-format="%Y-%m-%dT%H:%M:%S%z">2007-01-18T06:10:17-06:00</a></p>
+
+<p><a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/date/conversions.rb">code</a></p>
+
+</div>
+</div>
+
+</div>
+
+<div class="bg-light text-center mb-0 pt-1">
+  <p class="my-3 small">This code paraphrases <a href="http://api.rubyonrails.org/classes/DateTime.html#method-i-to_formatted_s">the <code>#to_formatted_s</code> docs</a>.</p>
+</div>
+
+
+<script>
+var elements = document.querySelectorAll("[data-name]");
+for (var el of elements) {
+  el.text = strftime(el.getAttribute("data-js-format"));
+};
+</script>
