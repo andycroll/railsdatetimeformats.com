@@ -3,74 +3,140 @@ layout: default
 ---
 
 <div class="container">
+  <div class="language-ruby highlighter-rouge">
+    <div class="highlight text-center h5 mt-3 mb-4">
+      <pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">to_s</span><span class="p">(</span><span class="ss">:sym<span class="d-none d-sm-inline">bol</span></span><span class="p">)</span></code></pre>
+    </div>
+  </div>
 
-<div class="language-ruby highlighter-rouge">
-  <div class="highlight text-center h4 mt-3 mb-4">
-    <pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">to_s</span><span class="p">(</span><span class="ss">:symbol</span><span class="p">)</span></code></pre>
+  <div class="row">
+    <div class="col-6 col-sm-4 col-md-5 text-right">
+      <p class="mb-0"><b>date</b></p>
+    </div>
+    <div class="col-3 col-md-2 text-center d-none d-sm-block">
+      <p class="mb-0"><b>:symbol</b></p>
+    </div>
+    <div class="col-6 col-sm-5">
+      <p class="mb-0"><b>time</b></p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="order-2 order-sm-1 col-6 col-sm-4 col-md-5 text-right">
+      <p><a class="" data-name="db" data-js-format="%Y-%m-%d">2007-11-10</a></p>
+    </div>
+    <div class="order-1 order-sm-2 col-12 col-sm-3 col-md-2 text-center">
+      <p class="mb-0"><b>:db</b></p>
+    </div>
+    <div class="order-3 col-6 col-sm-5">
+      <p><a class="" data-name="db" data-js-format="%Y-%m-%d %H:%M:%S">2007-01-18 12:34:56</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="order-2 order-sm-1 col-6 col-sm-4 col-md-5 text-right">
+      <p><a class="" data-name="number" data-js-format="%Y%m%d">20071110</a></p>
+    </div>
+    <div class="order-1 order-sm-2 col-12 col-sm-3 col-md-2 text-center">
+      <p class="mb-0"><b>:number</b></p>
+    </div>
+    <div class="order-3 col-6 col-sm-5">
+      <p><a class="" data-name="number" data-js-format="%Y%m%d%H%M%S">20070118123456</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="order-2 order-sm-1 col-6 col-sm-4 col-md-5 text-right">
+      <p>&nbsp;</p>
+    </div>
+    <div class="order-1 order-sm-2 col-12 col-sm-3 col-md-2 text-center">
+      <p class="mb-0"><b>:time</b></p>
+    </div>
+    <div class="order-3 col-6 col-sm-5">
+      <p><a class="" data-name="time" data-js-format="%H:%M">12:34</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="order-2 order-sm-1 col-6 col-sm-4 col-md-5 text-right">
+      <p><a class="" data-name="short" data-js-format="%d %b">10 Nov</a></p>
+    </div>
+    <div class="order-1 order-sm-2 col-12 col-sm-3 col-md-2 text-center">
+      <p class="mb-0"><b>:short</b></p>
+    </div>
+    <div class="order-3 col-6 col-sm-5">
+      <p><a class="" data-name="short" data-js-format="%d %b %H:%M">18 Jan 12:34</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="order-2 order-sm-1 col-6 col-sm-4 col-md-5 text-right">
+      <p><a class="" data-name="long" data-js-format="%B %d, %Y">November 10, 2007</a></p>
+    </div>
+    <div class="order-1 order-sm-2 col-12 col-sm-3 col-md-2 text-center">
+      <p class="mb-0"><b>:long</b></p>
+    </div>
+    <div class="order-3 col-6 col-sm-5">
+      <p><a class="" data-name="long" data-js-format="%B %d, %Y %H:%M">January 18, 2007 06:10</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="order-2 order-sm-1 col-6 col-sm-4 col-md-5 text-right">
+      <p><a class="" data-name="long_ordinal" data-js-format="%B %o, %Y">November 10th, 2007</a></p>
+    </div>
+    <div class="order-1 order-sm-2 col-12 col-sm-3 col-md-2 text-center">
+      <p class="mb-0"><b>:long_ordinal</b></p>
+    </div>
+    <div class="order-3 col-6 col-sm-5">
+      <p><a class="" data-name="long_ordinal" data-js-format="%B %o, %Y %H:%M">January 18th, 2007 06:10</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="order-2 order-sm-1 col-6 col-sm-4 col-md-5 text-right">
+      <p><a class="" data-name="rfc822" data-js-format="%d %b %Y">10 Nov 2007</a></p>
+    </div>
+    <div class="order-1 order-sm-2 col-12 col-sm-3 col-md-2 text-center">
+      <p class="mb-0"><b>:rfc822</b></p>
+    </div>
+    <div class="order-3 col-6 col-sm-5">
+      <p><a class="" data-name="rfc822" data-js-format="%a, %d %b %Y %H:%M:%S %z">Thu, 18 Jan 2007 06:10:17 -0600</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="order-2 order-sm-1 col-6 col-sm-4 col-md-5 text-right">
+      <p><a class="" data-name="iso8601" data-js-format="%Y-%m-%d">2007-11-10</a></p>
+    </div>
+    <div class="order-1 order-sm-2 col-12 col-sm-3 col-md-2 text-center">
+      <p class="mb-0"><b>:iso8601</b></p>
+    </div>
+    <div class="order-3 col-6 col-sm-5">
+      <p><a class="" data-name="iso8601" data-js-format="%Y-%m-%dT%H:%M:%S%z">2007-01-18T06:10:17-06:00</a></p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="col-6 col-sm-4 col-md-5 text-right">
+      <p><a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/date/conversions.rb">date source</a></p>
+    </div>
+    <div class="col-3 col-md-2 text-center d-none d-sm-block">
+      &nbsp;
+    </div>
+    <div class="col-6 col-sm-5">
+      <p><a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/time/conversions.rb">time source</a></p>
+    </div>
   </div>
 </div>
 
-<div class="row">
-
-<div class="col-5 text-right">
-
-<p><b>date</b></p>
-<hr />
-
-<p><a class="" data-name="db" data-js-format="%Y-%m-%d">2007-11-10</a></p>
-<p><a class="" data-name="number" data-js-format="%Y%m%d">20071110</a></p>
-<p>&nbsp;</p>
-<p><a class="" data-name="short" data-js-format="%d %b">10 Nov</a></p>
-<p><a class="" data-name="long" data-js-format="%B %d, %Y">November 10, 2007</a></p>
-<p><a class="" data-name="long_ordinal" data-js-format="%B %o, %Y">November 10th, 2007</a></p>
-<p><a class="" data-name="rfc822" data-js-format="%d %b %Y">10 Nov 2007</a></p>
-<p><a class="" data-name="iso8601" data-js-format="%Y-%m-%d">2007-11-10</a></p>
-
-<p><a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/time/conversions.rb">code</a></p>
-
-</div>
-
-<div class="col-2 text-center">
-
-<p><b>:symbol</b></p>
-<hr />
-
-<p><b>:db</b></p>
-<p><b>:number</b></p>
-<p><b>:time</b></p>
-<p><b>:short</b></p>
-<p><b>:long</b></p>
-<p><b>:long_ordinal</b></p>
-<p><b>:rfc822</b></p>
-<p><b>:iso8601</b></p>
-
-</div>
-
-<div class="col-5">
-
-<p><b>time</b></p>
-<hr />
-
-<p><a class="" data-name="db" data-js-format="%Y-%m-%d %H:%M:%S">2007-01-18 12:34:56</a></p>
-<p><a class="" data-name="number" data-js-format="%Y%m%d%H%M%S">20070118123456</a></p>
-<p><a class="" data-name="time" data-js-format="%H:%M">12:34</a></p>
-<p><a class="" data-name="short" data-js-format="%d %b %H:%M">18 Jan</a></p>
-<p><a class="" data-name="long" data-js-format="%B %d, %Y %H:%M">January 18, 2007 06:10</a></p>
-<p><a class="" data-name="long_ordinal" data-js-format="%B %o, %Y %H:%M">January 18th, 2007 06:10</a></p>
-<p><a class="" data-name="rfc822" data-js-format="%a, %d %b %Y %H:%M:%S %z">Thu, 18 Jan 2007 06:10:17 -0600</a></p>
-<p><a class="" data-name="iso8601" data-js-format="%Y-%m-%dT%H:%M:%S%z">2007-01-18T06:10:17-06:00</a></p>
-
-<p><a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/date/conversions.rb">code</a></p>
-
-</div>
-</div>
-
-</div>
-
-<div class="bg-light text-center mb-0 pt-1">
-  <p class="my-3 small">This code paraphrases <a href="http://api.rubyonrails.org/classes/DateTime.html#method-i-to_formatted_s">the <code>#to_formatted_s</code> docs</a>.</p>
-</div>
-
+  <div class="bg-light text-center mb-0 pt-1">
+    <p class="my-0 py-3 small">This code paraphrases <a href="http://api.rubyonrails.org/classes/DateTime.html#method-i-to_formatted_s">the <code>#to_formatted_s</code> docs</a>.</p>
+  </div>
 
 <script>
 var elements = document.querySelectorAll("[data-name]");
